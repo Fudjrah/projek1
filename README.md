@@ -34,3 +34,11 @@ composer install
 # Install & compile aset frontend
 npm install
 npm run build
+
+# Setup File Environment
+cp .env.example .env
+php artisan key:generate
+
+# Jalankan Migrasi & Server
+php artisan migrate
+php artisan serve
